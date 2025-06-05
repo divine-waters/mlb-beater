@@ -1,0 +1,4 @@
+MLB-StatsAPI>=1.9.0
+requests
+pandas
+fuzzywuzzy

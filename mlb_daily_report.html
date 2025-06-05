@@ -1,0 +1,248 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MLB Daily Report</title>
+        <style>
+            :root {
+                --primary-color: #002D72;
+                --secondary-color: #D50032;
+                --background-color: #f5f5f5;
+                --card-background: #ffffff;
+                --text-color: #333333;
+                --border-color: #e0e0e0;
+            }
+            
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 20px;
+                background-color: var(--background-color);
+                color: var(--text-color);
+            }
+            
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            
+            .header {
+                text-align: center;
+                padding: 20px;
+                background-color: var(--primary-color);
+                color: white;
+                border-radius: 10px;
+                margin-bottom: 20px;
+            }
+            
+            .section {
+                background-color: var(--card-background);
+                border-radius: 10px;
+                padding: 20px;
+                margin-bottom: 20px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            
+            .section-title {
+                color: var(--primary-color);
+                border-bottom: 2px solid var(--secondary-color);
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+            }
+            
+            .stats-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 20px;
+                margin-bottom: 20px;
+            }
+            
+            .stat-card {
+                background-color: var(--card-background);
+                border: 1px solid var(--border-color);
+                border-radius: 8px;
+                padding: 15px;
+            }
+            
+            .stat-title {
+                color: var(--secondary-color);
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            
+            .leader-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 15px;
+            }
+            
+            .leader-table th, .leader-table td {
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid var(--border-color);
+            }
+            
+            .leader-table th {
+                background-color: var(--primary-color);
+                color: white;
+            }
+            
+            .leader-table tr:nth-child(even) {
+                background-color: #f8f8f8;
+            }
+            
+            .game-card {
+                border: 1px solid var(--border-color);
+                border-radius: 8px;
+                padding: 15px;
+                margin-bottom: 15px;
+            }
+            
+            .game-header {
+                font-weight: bold;
+                color: var(--primary-color);
+                margin-bottom: 10px;
+            }
+            
+            .odds-table { width: 100%; border-collapse: collapse; margin-bottom: 10px; }
+            .odds-table th, .odds-table td { padding: 6px; border-bottom: 1px solid var(--border-color); }
+            .odds-table th { background-color: #e8e8e8; }
+            .favorite { color: var(--secondary-color); font-weight: bold; }
+            .value-score { font-weight: bold; color: var(--secondary-color); }
+            .timestamp { text-align: center; color: #666; font-size: 0.9em; margin-top: 20px; }
+            .summary-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+            .summary-table th, .summary-table td { padding: 6px; border-bottom: 1px solid var(--border-color); }
+            .summary-table th { background-color: #e8e8e8; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>MLB Daily Report</h1>
+                <p>Generated on 2025-06-04 19:07:43</p>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Today's Games</h2>
+                <div class="game-card"><div class="game-header">Baltimore Orioles @ Seattle Mariners - 2025-06-05 01:41 PM MT</div><table class="odds-table"><tr><th>Team</th><th>Bookmaker</th><th>Odds</th><th>Win Probability</th><th>Favorite?</th></tr><tr><td>Seattle Mariners</td><td>FanDuel</td><td>-174</td><td>63.5%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Seattle Mariners</td><td>BetOnline.ag</td><td>-162</td><td>61.8%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Seattle Mariners</td><td>LowVig.ag</td><td>-162</td><td>61.8%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Seattle Mariners</td><td>DraftKings</td><td>-170</td><td>63.0%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Seattle Mariners</td><td>MyBookie.ag</td><td>-172</td><td>63.2%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Seattle Mariners</td><td>BetMGM</td><td>-180</td><td>64.3%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Baltimore Orioles</td><td>FanDuel</td><td>146</td><td>40.7%</td><td>No</td></tr><tr><td>Baltimore Orioles</td><td>BetOnline.ag</td><td>147</td><td>40.5%</td><td>No</td></tr><tr><td>Baltimore Orioles</td><td>LowVig.ag</td><td>147</td><td>40.5%</td><td>No</td></tr><tr><td>Baltimore Orioles</td><td>DraftKings</td><td>142</td><td>41.3%</td><td>No</td></tr><tr><td>Baltimore Orioles</td><td>MyBookie.ag</td><td>146</td><td>40.7%</td><td>No</td></tr><tr><td>Baltimore Orioles</td><td>BetMGM</td><td>145</td><td>40.8%</td><td>No</td></tr></table></div><div class="game-card"><div class="game-header">Chicago Cubs @ Washington Nationals - 2025-06-04 04:46 PM MT</div><table class="odds-table"><tr><th>Team</th><th>Bookmaker</th><th>Odds</th><th>Win Probability</th><th>Favorite?</th></tr><tr><td>Washington Nationals</td><td>FanDuel</td><td>-5000</td><td>98.0%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Washington Nationals</td><td>DraftKings</td><td>-2100</td><td>95.5%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Washington Nationals</td><td>BetMGM</td><td>-1000</td><td>90.9%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Washington Nationals</td><td>Bovada</td><td>-3300</td><td>97.1%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Chicago Cubs</td><td>FanDuel</td><td>1300</td><td>7.1%</td><td>No</td></tr><tr><td>Chicago Cubs</td><td>DraftKings</td><td>1000</td><td>9.1%</td><td>No</td></tr><tr><td>Chicago Cubs</td><td>BetMGM</td><td>600</td><td>14.3%</td><td>No</td></tr><tr><td>Chicago Cubs</td><td>Bovada</td><td>1200</td><td>7.7%</td><td>No</td></tr></table></div><div class="game-card"><div class="game-header">Philadelphia Phillies @ Toronto Blue Jays - 2025-06-04 05:08 PM MT</div><table class="odds-table"><tr><th>Team</th><th>Bookmaker</th><th>Odds</th><th>Win Probability</th><th>Favorite?</th></tr><tr><td>Toronto Blue Jays</td><td>FanDuel</td><td>-122</td><td>55.0%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Toronto Blue Jays</td><td>DraftKings</td><td>-110</td><td>52.4%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Toronto Blue Jays</td><td>MyBookie.ag</td><td>-118</td><td>54.1%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Toronto Blue Jays</td><td>BetMGM</td><td>-102</td><td>50.5%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Toronto Blue Jays</td><td>Bovada</td><td>-150</td><td>60.0%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Philadelphia Phillies</td><td>FanDuel</td><td>-104</td><td>51.0%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Philadelphia Phillies</td><td>DraftKings</td><td>-120</td><td>54.5%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Philadelphia Phillies</td><td>MyBookie.ag</td><td>-111</td><td>52.6%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Philadelphia Phillies</td><td>BetMGM</td><td>-120</td><td>54.5%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Philadelphia Phillies</td><td>Bovada</td><td>115</td><td>46.5%</td><td>No</td></tr></table></div><div class="game-card"><div class="game-header">Arizona Diamondbacks @ Atlanta Braves - 2025-06-05 10:15 AM MT</div><table class="odds-table"><tr><th>Team</th><th>Bookmaker</th><th>Odds</th><th>Win Probability</th><th>Favorite?</th></tr><tr><td>Atlanta Braves</td><td>FanDuel</td><td>-134</td><td>57.3%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Atlanta Braves</td><td>LowVig.ag</td><td>-130</td><td>56.5%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Atlanta Braves</td><td>BetOnline.ag</td><td>-130</td><td>56.5%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Atlanta Braves</td><td>DraftKings</td><td>-135</td><td>57.4%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Atlanta Braves</td><td>MyBookie.ag</td><td>-133</td><td>57.1%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Atlanta Braves</td><td>BetMGM</td><td>-140</td><td>58.3%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Atlanta Braves</td><td>BetUS</td><td>-130</td><td>56.5%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Arizona Diamondbacks</td><td>FanDuel</td><td>114</td><td>46.7%</td><td>No</td></tr><tr><td>Arizona Diamondbacks</td><td>LowVig.ag</td><td>118</td><td>45.9%</td><td>No</td></tr><tr><td>Arizona Diamondbacks</td><td>BetOnline.ag</td><td>118</td><td>45.9%</td><td>No</td></tr><tr><td>Arizona Diamondbacks</td><td>DraftKings</td><td>114</td><td>46.7%</td><td>No</td></tr><tr><td>Arizona Diamondbacks</td><td>MyBookie.ag</td><td>114</td><td>46.7%</td><td>No</td></tr><tr><td>Arizona Diamondbacks</td><td>BetMGM</td><td>115</td><td>46.5%</td><td>No</td></tr><tr><td>Arizona Diamondbacks</td><td>BetUS</td><td>118</td><td>45.9%</td><td>No</td></tr></table></div><div class="game-card"><div class="game-header">Houston Astros @ Pittsburgh Pirates - 2025-06-04 04:41 PM MT</div><table class="odds-table"><tr><th>Team</th><th>Bookmaker</th><th>Odds</th><th>Win Probability</th><th>Favorite?</th></tr><tr><td>Pittsburgh Pirates</td><td>FanDuel</td><td>-50000</td><td>99.8%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Pittsburgh Pirates</td><td>DraftKings</td><td>-10000</td><td>99.0%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Pittsburgh Pirates</td><td>BetMGM</td><td>-10000</td><td>99.0%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Pittsburgh Pirates</td><td>Bovada</td><td>-6600</td><td>98.5%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Houston Astros</td><td>FanDuel</td><td>3500</td><td>2.8%</td><td>No</td></tr><tr><td>Houston Astros</td><td>DraftKings</td><td>2200</td><td>4.3%</td><td>No</td></tr><tr><td>Houston Astros</td><td>BetMGM</td><td>1700</td><td>5.6%</td><td>No</td></tr><tr><td>Houston Astros</td><td>Bovada</td><td>1500</td><td>6.2%</td><td>No</td></tr></table></div><div class="game-card"><div class="game-header">Detroit Tigers @ Chicago White Sox - 2025-06-05 12:10 PM MT</div><table class="odds-table"><tr><th>Team</th><th>Bookmaker</th><th>Odds</th><th>Win Probability</th><th>Favorite?</th></tr><tr><td>Chicago White Sox</td><td>LowVig.ag</td><td>186</td><td>35.0%</td><td>No</td></tr><tr><td>Chicago White Sox</td><td>BetOnline.ag</td><td>186</td><td>35.0%</td><td>No</td></tr><tr><td>Chicago White Sox</td><td>DraftKings</td><td>180</td><td>35.7%</td><td>No</td></tr><tr><td>Chicago White Sox</td><td>MyBookie.ag</td><td>181</td><td>35.6%</td><td>No</td></tr><tr><td>Chicago White Sox</td><td>BetMGM</td><td>180</td><td>35.7%</td><td>No</td></tr><tr><td>Detroit Tigers</td><td>LowVig.ag</td><td>-207</td><td>67.4%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Detroit Tigers</td><td>BetOnline.ag</td><td>-207</td><td>67.4%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Detroit Tigers</td><td>DraftKings</td><td>-218</td><td>68.6%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Detroit Tigers</td><td>MyBookie.ag</td><td>-217</td><td>68.5%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Detroit Tigers</td><td>BetMGM</td><td>-220</td><td>68.8%</td><td><span class="favorite">Yes</span></td></tr></table></div><div class="game-card"><div class="game-header">Texas Rangers @ Tampa Bay Rays - 2025-06-04 05:36 PM MT</div><table class="odds-table"><tr><th>Team</th><th>Bookmaker</th><th>Odds</th><th>Win Probability</th><th>Favorite?</th></tr><tr><td>Tampa Bay Rays</td><td>FanDuel</td><td>-1100</td><td>91.7%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Tampa Bay Rays</td><td>BetMGM</td><td>-1100</td><td>91.7%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Tampa Bay Rays</td><td>DraftKings</td><td>-1150</td><td>92.0%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Tampa Bay Rays</td><td>Bovada</td><td>-6600</td><td>98.5%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Texas Rangers</td><td>FanDuel</td><td>600</td><td>14.3%</td><td>No</td></tr><tr><td>Texas Rangers</td><td>BetMGM</td><td>625</td><td>13.8%</td><td>No</td></tr><tr><td>Texas Rangers</td><td>DraftKings</td><td>650</td><td>13.3%</td><td>No</td></tr><tr><td>Texas Rangers</td><td>Bovada</td><td>1500</td><td>6.2%</td><td>No</td></tr></table></div><div class="game-card"><div class="game-header">Detroit Tigers @ Chicago White Sox - 2025-06-04 06:41 PM MT</div><table class="odds-table"><tr><th>Team</th><th>Bookmaker</th><th>Odds</th><th>Win Probability</th><th>Favorite?</th></tr><tr><td>Chicago White Sox</td><td>FanDuel</td><td>168</td><td>37.3%</td><td>No</td></tr><tr><td>Chicago White Sox</td><td>DraftKings</td><td>164</td><td>37.9%</td><td>No</td></tr><tr><td>Chicago White Sox</td><td>Bovada</td><td>167</td><td>37.5%</td><td>No</td></tr><tr><td>Chicago White Sox</td><td>BetRivers</td><td>180</td><td>35.7%</td><td>No</td></tr><tr><td>Chicago White Sox</td><td>BetMGM</td><td>165</td><td>37.7%</td><td>No</td></tr><tr><td>Chicago White Sox</td><td>LowVig.ag</td><td>166</td><td>37.6%</td><td>No</td></tr><tr><td>Chicago White Sox</td><td>BetUS</td><td>162</td><td>38.2%</td><td>No</td></tr><tr><td>Chicago White Sox</td><td>BetOnline.ag</td><td>166</td><td>37.6%</td><td>No</td></tr><tr><td>Detroit Tigers</td><td>FanDuel</td><td>-200</td><td>66.7%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Detroit Tigers</td><td>DraftKings</td><td>-198</td><td>66.4%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Detroit Tigers</td><td>Bovada</td><td>-204</td><td>67.1%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Detroit Tigers</td><td>BetRivers</td><td>-215</td><td>68.3%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Detroit Tigers</td><td>BetMGM</td><td>-200</td><td>66.7%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Detroit Tigers</td><td>LowVig.ag</td><td>-184</td><td>64.8%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Detroit Tigers</td><td>BetUS</td><td>-184</td><td>64.8%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Detroit Tigers</td><td>BetOnline.ag</td><td>-184</td><td>64.8%</td><td><span class="favorite">Yes</span></td></tr></table></div><div class="game-card"><div class="game-header">Philadelphia Phillies @ Toronto Blue Jays - 2025-06-05 01:08 PM MT</div><table class="odds-table"><tr><th>Team</th><th>Bookmaker</th><th>Odds</th><th>Win Probability</th><th>Favorite?</th></tr><tr><td>Toronto Blue Jays</td><td>FanDuel</td><td>106</td><td>48.5%</td><td>No</td></tr><tr><td>Toronto Blue Jays</td><td>LowVig.ag</td><td>107</td><td>48.3%</td><td>No</td></tr><tr><td>Toronto Blue Jays</td><td>BetOnline.ag</td><td>107</td><td>48.3%</td><td>No</td></tr><tr><td>Toronto Blue Jays</td><td>DraftKings</td><td>105</td><td>48.8%</td><td>No</td></tr><tr><td>Toronto Blue Jays</td><td>MyBookie.ag</td><td>106</td><td>48.5%</td><td>No</td></tr><tr><td>Toronto Blue Jays</td><td>BetMGM</td><td>105</td><td>48.8%</td><td>No</td></tr><tr><td>Philadelphia Phillies</td><td>FanDuel</td><td>-124</td><td>55.4%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Philadelphia Phillies</td><td>LowVig.ag</td><td>-118</td><td>54.1%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Philadelphia Phillies</td><td>BetOnline.ag</td><td>-118</td><td>54.1%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Philadelphia Phillies</td><td>DraftKings</td><td>-125</td><td>55.6%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Philadelphia Phillies</td><td>MyBookie.ag</td><td>-125</td><td>55.6%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Philadelphia Phillies</td><td>BetMGM</td><td>-125</td><td>55.6%</td><td><span class="favorite">Yes</span></td></tr></table></div><div class="game-card"><div class="game-header">Houston Astros @ Pittsburgh Pirates - 2025-06-05 04:41 PM MT</div><table class="odds-table"><tr><th>Team</th><th>Bookmaker</th><th>Odds</th><th>Win Probability</th><th>Favorite?</th></tr><tr><td>Pittsburgh Pirates</td><td>FanDuel</td><td>136</td><td>42.4%</td><td>No</td></tr><tr><td>Pittsburgh Pirates</td><td>LowVig.ag</td><td>139</td><td>41.8%</td><td>No</td></tr><tr><td>Pittsburgh Pirates</td><td>BetOnline.ag</td><td>139</td><td>41.8%</td><td>No</td></tr><tr><td>Pittsburgh Pirates</td><td>DraftKings</td><td>136</td><td>42.4%</td><td>No</td></tr><tr><td>Pittsburgh Pirates</td><td>MyBookie.ag</td><td>137</td><td>42.2%</td><td>No</td></tr><tr><td>Pittsburgh Pirates</td><td>BetMGM</td><td>135</td><td>42.6%</td><td>No</td></tr><tr><td>Pittsburgh Pirates</td><td>BetUS</td><td>137</td><td>42.2%</td><td>No</td></tr><tr><td>Houston Astros</td><td>FanDuel</td><td>-162</td><td>61.8%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Houston Astros</td><td>LowVig.ag</td><td>-153</td><td>60.5%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Houston Astros</td><td>BetOnline.ag</td><td>-153</td><td>60.5%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Houston Astros</td><td>DraftKings</td><td>-162</td><td>61.8%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Houston Astros</td><td>MyBookie.ag</td><td>-161</td><td>61.7%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Houston Astros</td><td>BetMGM</td><td>-160</td><td>61.5%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Houston Astros</td><td>BetUS</td><td>-153</td><td>60.5%</td><td><span class="favorite">Yes</span></td></tr></table></div><div class="game-card"><div class="game-header">Cleveland Guardians @ New York Yankees - 2025-06-05 05:06 PM MT</div><table class="odds-table"><tr><th>Team</th><th>Bookmaker</th><th>Odds</th><th>Win Probability</th><th>Favorite?</th></tr><tr><td>New York Yankees</td><td>FanDuel</td><td>-260</td><td>72.2%</td><td><span class="favorite">Yes</span></td></tr><tr><td>New York Yankees</td><td>LowVig.ag</td><td>-250</td><td>71.4%</td><td><span class="favorite">Yes</span></td></tr><tr><td>New York Yankees</td><td>BetOnline.ag</td><td>-250</td><td>71.4%</td><td><span class="favorite">Yes</span></td></tr><tr><td>New York Yankees</td><td>MyBookie.ag</td><td>-256</td><td>71.9%</td><td><span class="favorite">Yes</span></td></tr><tr><td>New York Yankees</td><td>DraftKings</td><td>-258</td><td>72.1%</td><td><span class="favorite">Yes</span></td></tr><tr><td>New York Yankees</td><td>BetMGM</td><td>-275</td><td>73.3%</td><td><span class="favorite">Yes</span></td></tr><tr><td>New York Yankees</td><td>BetUS</td><td>-250</td><td>71.4%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Cleveland Guardians</td><td>FanDuel</td><td>215</td><td>31.7%</td><td>No</td></tr><tr><td>Cleveland Guardians</td><td>LowVig.ag</td><td>223</td><td>31.0%</td><td>No</td></tr><tr><td>Cleveland Guardians</td><td>BetOnline.ag</td><td>223</td><td>31.0%</td><td>No</td></tr><tr><td>Cleveland Guardians</td><td>MyBookie.ag</td><td>212</td><td>32.1%</td><td>No</td></tr><tr><td>Cleveland Guardians</td><td>DraftKings</td><td>210</td><td>32.3%</td><td>No</td></tr><tr><td>Cleveland Guardians</td><td>BetMGM</td><td>220</td><td>31.2%</td><td>No</td></tr><tr><td>Cleveland Guardians</td><td>BetUS</td><td>214</td><td>31.8%</td><td>No</td></tr></table></div><div class="game-card"><div class="game-header">San Diego Padres @ San Francisco Giants - 2025-06-05 01:46 PM MT</div><table class="odds-table"><tr><th>Team</th><th>Bookmaker</th><th>Odds</th><th>Win Probability</th><th>Favorite?</th></tr><tr><td>San Francisco Giants</td><td>FanDuel</td><td>-118</td><td>54.1%</td><td><span class="favorite">Yes</span></td></tr><tr><td>San Francisco Giants</td><td>LowVig.ag</td><td>-125</td><td>55.6%</td><td><span class="favorite">Yes</span></td></tr><tr><td>San Francisco Giants</td><td>BetOnline.ag</td><td>-125</td><td>55.6%</td><td><span class="favorite">Yes</span></td></tr><tr><td>San Francisco Giants</td><td>DraftKings</td><td>-125</td><td>55.6%</td><td><span class="favorite">Yes</span></td></tr><tr><td>San Francisco Giants</td><td>MyBookie.ag</td><td>-123</td><td>55.2%</td><td><span class="favorite">Yes</span></td></tr><tr><td>San Francisco Giants</td><td>BetMGM</td><td>-125</td><td>55.6%</td><td><span class="favorite">Yes</span></td></tr><tr><td>San Diego Padres</td><td>FanDuel</td><td>100</td><td>50.0%</td><td>No</td></tr><tr><td>San Diego Padres</td><td>LowVig.ag</td><td>113</td><td>46.9%</td><td>No</td></tr><tr><td>San Diego Padres</td><td>BetOnline.ag</td><td>113</td><td>46.9%</td><td>No</td></tr><tr><td>San Diego Padres</td><td>DraftKings</td><td>105</td><td>48.8%</td><td>No</td></tr><tr><td>San Diego Padres</td><td>MyBookie.ag</td><td>105</td><td>48.8%</td><td>No</td></tr><tr><td>San Diego Padres</td><td>BetMGM</td><td>105</td><td>48.8%</td><td>No</td></tr></table></div><div class="game-card"><div class="game-header">Baltimore Orioles @ Seattle Mariners - 2025-06-04 07:41 PM MT</div><table class="odds-table"><tr><th>Team</th><th>Bookmaker</th><th>Odds</th><th>Win Probability</th><th>Favorite?</th></tr><tr><td>Seattle Mariners</td><td>FanDuel</td><td>-108</td><td>51.9%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Seattle Mariners</td><td>BetOnline.ag</td><td>-105</td><td>51.2%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Seattle Mariners</td><td>LowVig.ag</td><td>-105</td><td>51.2%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Seattle Mariners</td><td>DraftKings</td><td>-108</td><td>51.9%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Seattle Mariners</td><td>MyBookie.ag</td><td>-106</td><td>51.5%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Seattle Mariners</td><td>BetMGM</td><td>-110</td><td>52.4%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Seattle Mariners</td><td>BetRivers</td><td>-109</td><td>52.2%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Seattle Mariners</td><td>Bovada</td><td>-109</td><td>52.2%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Seattle Mariners</td><td>BetUS</td><td>-105</td><td>51.2%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Baltimore Orioles</td><td>FanDuel</td><td>-108</td><td>51.9%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Baltimore Orioles</td><td>BetOnline.ag</td><td>-105</td><td>51.2%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Baltimore Orioles</td><td>LowVig.ag</td><td>-105</td><td>51.2%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Baltimore Orioles</td><td>DraftKings</td><td>-112</td><td>52.8%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Baltimore Orioles</td><td>MyBookie.ag</td><td>-110</td><td>52.4%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Baltimore Orioles</td><td>BetMGM</td><td>-110</td><td>52.4%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Baltimore Orioles</td><td>BetRivers</td><td>-107</td><td>51.7%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Baltimore Orioles</td><td>Bovada</td><td>-111</td><td>52.6%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Baltimore Orioles</td><td>BetUS</td><td>-105</td><td>51.2%</td><td><span class="favorite">Yes</span></td></tr></table></div><div class="game-card"><div class="game-header">San Diego Padres @ San Francisco Giants - 2025-06-04 07:46 PM MT</div><table class="odds-table"><tr><th>Team</th><th>Bookmaker</th><th>Odds</th><th>Win Probability</th><th>Favorite?</th></tr><tr><td>San Francisco Giants</td><td>FanDuel</td><td>-102</td><td>50.5%</td><td><span class="favorite">Yes</span></td></tr><tr><td>San Francisco Giants</td><td>BetOnline.ag</td><td>-101</td><td>50.2%</td><td><span class="favorite">Yes</span></td></tr><tr><td>San Francisco Giants</td><td>LowVig.ag</td><td>-101</td><td>50.2%</td><td><span class="favorite">Yes</span></td></tr><tr><td>San Francisco Giants</td><td>DraftKings</td><td>-105</td><td>51.2%</td><td><span class="favorite">Yes</span></td></tr><tr><td>San Francisco Giants</td><td>MyBookie.ag</td><td>-105</td><td>51.2%</td><td><span class="favorite">Yes</span></td></tr><tr><td>San Francisco Giants</td><td>BetMGM</td><td>-105</td><td>51.2%</td><td><span class="favorite">Yes</span></td></tr><tr><td>San Francisco Giants</td><td>BetRivers</td><td>-104</td><td>51.0%</td><td><span class="favorite">Yes</span></td></tr><tr><td>San Francisco Giants</td><td>Bovada</td><td>-103</td><td>50.7%</td><td><span class="favorite">Yes</span></td></tr><tr><td>San Francisco Giants</td><td>BetUS</td><td>-101</td><td>50.2%</td><td><span class="favorite">Yes</span></td></tr><tr><td>San Diego Padres</td><td>FanDuel</td><td>-116</td><td>53.7%</td><td><span class="favorite">Yes</span></td></tr><tr><td>San Diego Padres</td><td>BetOnline.ag</td><td>-109</td><td>52.2%</td><td><span class="favorite">Yes</span></td></tr><tr><td>San Diego Padres</td><td>LowVig.ag</td><td>-109</td><td>52.2%</td><td><span class="favorite">Yes</span></td></tr><tr><td>San Diego Padres</td><td>DraftKings</td><td>-115</td><td>53.5%</td><td><span class="favorite">Yes</span></td></tr><tr><td>San Diego Padres</td><td>MyBookie.ag</td><td>-111</td><td>52.6%</td><td><span class="favorite">Yes</span></td></tr><tr><td>San Diego Padres</td><td>BetMGM</td><td>-115</td><td>53.5%</td><td><span class="favorite">Yes</span></td></tr><tr><td>San Diego Padres</td><td>BetRivers</td><td>-113</td><td>53.1%</td><td><span class="favorite">Yes</span></td></tr><tr><td>San Diego Padres</td><td>Bovada</td><td>-117</td><td>53.9%</td><td><span class="favorite">Yes</span></td></tr><tr><td>San Diego Padres</td><td>BetUS</td><td>-109</td><td>52.2%</td><td><span class="favorite">Yes</span></td></tr></table></div><div class="game-card"><div class="game-header">Kansas City Royals @ St. Louis Cardinals - 2025-06-05 11:46 AM MT</div><table class="odds-table"><tr><th>Team</th><th>Bookmaker</th><th>Odds</th><th>Win Probability</th><th>Favorite?</th></tr><tr><td>St. Louis Cardinals</td><td>FanDuel</td><td>-132</td><td>56.9%</td><td><span class="favorite">Yes</span></td></tr><tr><td>St. Louis Cardinals</td><td>BetOnline.ag</td><td>-129</td><td>56.3%</td><td><span class="favorite">Yes</span></td></tr><tr><td>St. Louis Cardinals</td><td>LowVig.ag</td><td>-129</td><td>56.3%</td><td><span class="favorite">Yes</span></td></tr><tr><td>St. Louis Cardinals</td><td>MyBookie.ag</td><td>-130</td><td>56.5%</td><td><span class="favorite">Yes</span></td></tr><tr><td>St. Louis Cardinals</td><td>DraftKings</td><td>-130</td><td>56.5%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Kansas City Royals</td><td>FanDuel</td><td>112</td><td>47.2%</td><td>No</td></tr><tr><td>Kansas City Royals</td><td>BetOnline.ag</td><td>117</td><td>46.1%</td><td>No</td></tr><tr><td>Kansas City Royals</td><td>LowVig.ag</td><td>117</td><td>46.1%</td><td>No</td></tr><tr><td>Kansas City Royals</td><td>MyBookie.ag</td><td>110</td><td>47.6%</td><td>No</td></tr><tr><td>Kansas City Royals</td><td>DraftKings</td><td>110</td><td>47.6%</td><td>No</td></tr></table></div><div class="game-card"><div class="game-header">Arizona Diamondbacks @ Atlanta Braves - 2025-06-04 06:20 PM MT</div><table class="odds-table"><tr><th>Team</th><th>Bookmaker</th><th>Odds</th><th>Win Probability</th><th>Favorite?</th></tr><tr><td>Atlanta Braves</td><td>FanDuel</td><td>114</td><td>46.7%</td><td>No</td></tr><tr><td>Atlanta Braves</td><td>DraftKings</td><td>105</td><td>48.8%</td><td>No</td></tr><tr><td>Atlanta Braves</td><td>MyBookie.ag</td><td>-154</td><td>60.6%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Atlanta Braves</td><td>BetMGM</td><td>110</td><td>47.6%</td><td>No</td></tr><tr><td>Atlanta Braves</td><td>Bovada</td><td>-110</td><td>52.4%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Arizona Diamondbacks</td><td>FanDuel</td><td>-146</td><td>59.3%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Arizona Diamondbacks</td><td>DraftKings</td><td>-135</td><td>57.4%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Arizona Diamondbacks</td><td>MyBookie.ag</td><td>120</td><td>45.5%</td><td>No</td></tr><tr><td>Arizona Diamondbacks</td><td>BetMGM</td><td>-140</td><td>58.3%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Arizona Diamondbacks</td><td>Bovada</td><td>-120</td><td>54.5%</td><td><span class="favorite">Yes</span></td></tr></table></div><div class="game-card"><div class="game-header">New York Mets @ Los Angeles Dodgers - 2025-06-05 02:11 PM MT</div><table class="odds-table"><tr><th>Team</th><th>Bookmaker</th><th>Odds</th><th>Win Probability</th><th>Favorite?</th></tr><tr><td>Los Angeles Dodgers</td><td>FanDuel</td><td>-124</td><td>55.4%</td><td><span class="favorite">Yes</span></td></tr><tr><td>New York Mets</td><td>FanDuel</td><td>106</td><td>48.5%</td><td>No</td></tr></table></div><div class="game-card"><div class="game-header">Texas Rangers @ Tampa Bay Rays - 2025-06-05 05:36 PM MT</div><table class="odds-table"><tr><th>Team</th><th>Bookmaker</th><th>Odds</th><th>Win Probability</th><th>Favorite?</th></tr><tr><td>Tampa Bay Rays</td><td>FanDuel</td><td>-144</td><td>59.0%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Tampa Bay Rays</td><td>BetOnline.ag</td><td>-142</td><td>58.7%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Tampa Bay Rays</td><td>LowVig.ag</td><td>-142</td><td>58.7%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Tampa Bay Rays</td><td>DraftKings</td><td>-148</td><td>59.7%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Tampa Bay Rays</td><td>MyBookie.ag</td><td>-147</td><td>59.5%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Tampa Bay Rays</td><td>BetMGM</td><td>-150</td><td>60.0%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Tampa Bay Rays</td><td>BetUS</td><td>-142</td><td>58.7%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Texas Rangers</td><td>FanDuel</td><td>122</td><td>45.0%</td><td>No</td></tr><tr><td>Texas Rangers</td><td>BetOnline.ag</td><td>129</td><td>43.7%</td><td>No</td></tr><tr><td>Texas Rangers</td><td>LowVig.ag</td><td>129</td><td>43.7%</td><td>No</td></tr><tr><td>Texas Rangers</td><td>DraftKings</td><td>124</td><td>44.6%</td><td>No</td></tr><tr><td>Texas Rangers</td><td>MyBookie.ag</td><td>125</td><td>44.4%</td><td>No</td></tr><tr><td>Texas Rangers</td><td>BetMGM</td><td>125</td><td>44.4%</td><td>No</td></tr><tr><td>Texas Rangers</td><td>BetUS</td><td>128</td><td>43.9%</td><td>No</td></tr></table></div><div class="game-card"><div class="game-header">New York Mets @ Los Angeles Dodgers - 2025-06-04 08:11 PM MT</div><table class="odds-table"><tr><th>Team</th><th>Bookmaker</th><th>Odds</th><th>Win Probability</th><th>Favorite?</th></tr><tr><td>Los Angeles Dodgers</td><td>FanDuel</td><td>-142</td><td>58.7%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Los Angeles Dodgers</td><td>LowVig.ag</td><td>-140</td><td>58.3%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Los Angeles Dodgers</td><td>BetOnline.ag</td><td>-140</td><td>58.3%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Los Angeles Dodgers</td><td>DraftKings</td><td>-148</td><td>59.7%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Los Angeles Dodgers</td><td>MyBookie.ag</td><td>-147</td><td>59.5%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Los Angeles Dodgers</td><td>BetMGM</td><td>-150</td><td>60.0%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Los Angeles Dodgers</td><td>BetRivers</td><td>-148</td><td>59.7%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Los Angeles Dodgers</td><td>Bovada</td><td>-145</td><td>59.2%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Los Angeles Dodgers</td><td>BetUS</td><td>-142</td><td>58.7%</td><td><span class="favorite">Yes</span></td></tr><tr><td>New York Mets</td><td>FanDuel</td><td>120</td><td>45.5%</td><td>No</td></tr><tr><td>New York Mets</td><td>LowVig.ag</td><td>127</td><td>44.1%</td><td>No</td></tr><tr><td>New York Mets</td><td>BetOnline.ag</td><td>127</td><td>44.1%</td><td>No</td></tr><tr><td>New York Mets</td><td>DraftKings</td><td>124</td><td>44.6%</td><td>No</td></tr><tr><td>New York Mets</td><td>MyBookie.ag</td><td>125</td><td>44.4%</td><td>No</td></tr><tr><td>New York Mets</td><td>BetMGM</td><td>125</td><td>44.4%</td><td>No</td></tr><tr><td>New York Mets</td><td>BetRivers</td><td>125</td><td>44.4%</td><td>No</td></tr><tr><td>New York Mets</td><td>Bovada</td><td>122</td><td>45.0%</td><td>No</td></tr><tr><td>New York Mets</td><td>BetUS</td><td>128</td><td>43.9%</td><td>No</td></tr></table></div><div class="game-card"><div class="game-header">Minnesota Twins @ Oakland Athletics - 2025-06-04 08:06 PM MT</div><table class="odds-table"><tr><th>Team</th><th>Bookmaker</th><th>Odds</th><th>Win Probability</th><th>Favorite?</th></tr><tr><td>Oakland Athletics</td><td>FanDuel</td><td>148</td><td>40.3%</td><td>No</td></tr><tr><td>Oakland Athletics</td><td>Bovada</td><td>143</td><td>41.2%</td><td>No</td></tr><tr><td>Oakland Athletics</td><td>DraftKings</td><td>150</td><td>40.0%</td><td>No</td></tr><tr><td>Oakland Athletics</td><td>BetRivers</td><td>155</td><td>39.2%</td><td>No</td></tr><tr><td>Oakland Athletics</td><td>BetMGM</td><td>150</td><td>40.0%</td><td>No</td></tr><tr><td>Oakland Athletics</td><td>MyBookie.ag</td><td>152</td><td>39.7%</td><td>No</td></tr><tr><td>Oakland Athletics</td><td>LowVig.ag</td><td>154</td><td>39.4%</td><td>No</td></tr><tr><td>Oakland Athletics</td><td>BetOnline.ag</td><td>154</td><td>39.4%</td><td>No</td></tr><tr><td>Oakland Athletics</td><td>BetUS</td><td>147</td><td>40.5%</td><td>No</td></tr><tr><td>Minnesota Twins</td><td>FanDuel</td><td>-176</td><td>63.8%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Minnesota Twins</td><td>Bovada</td><td>-174</td><td>63.5%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Minnesota Twins</td><td>DraftKings</td><td>-180</td><td>64.3%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Minnesota Twins</td><td>BetRivers</td><td>-182</td><td>64.5%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Minnesota Twins</td><td>BetMGM</td><td>-185</td><td>64.9%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Minnesota Twins</td><td>MyBookie.ag</td><td>-179</td><td>64.2%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Minnesota Twins</td><td>LowVig.ag</td><td>-170</td><td>63.0%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Minnesota Twins</td><td>BetOnline.ag</td><td>-170</td><td>63.0%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Minnesota Twins</td><td>BetUS</td><td>-166</td><td>62.4%</td><td><span class="favorite">Yes</span></td></tr></table></div><div class="game-card"><div class="game-header">Cleveland Guardians @ New York Yankees - 2025-06-04 05:11 PM MT</div><table class="odds-table"><tr><th>Team</th><th>Bookmaker</th><th>Odds</th><th>Win Probability</th><th>Favorite?</th></tr><tr><td>New York Yankees</td><td>FanDuel</td><td>630</td><td>13.7%</td><td>No</td></tr><tr><td>New York Yankees</td><td>DraftKings</td><td>550</td><td>15.4%</td><td>No</td></tr><tr><td>New York Yankees</td><td>BetMGM</td><td>500</td><td>16.7%</td><td>No</td></tr><tr><td>New York Yankees</td><td>Bovada</td><td>700</td><td>12.5%</td><td>No</td></tr><tr><td>Cleveland Guardians</td><td>FanDuel</td><td>-1200</td><td>92.3%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Cleveland Guardians</td><td>DraftKings</td><td>-920</td><td>90.2%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Cleveland Guardians</td><td>BetMGM</td><td>-750</td><td>88.2%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Cleveland Guardians</td><td>Bovada</td><td>-1400</td><td>93.3%</td><td><span class="favorite">Yes</span></td></tr></table></div><div class="game-card"><div class="game-header">Kansas City Royals @ St. Louis Cardinals - 2025-06-05 05:45 PM MT</div><table class="odds-table"><tr><th>Team</th><th>Bookmaker</th><th>Odds</th><th>Win Probability</th><th>Favorite?</th></tr><tr><td>St. Louis Cardinals</td><td>FanDuel</td><td>-118</td><td>54.1%</td><td><span class="favorite">Yes</span></td></tr><tr><td>St. Louis Cardinals</td><td>LowVig.ag</td><td>-112</td><td>52.8%</td><td><span class="favorite">Yes</span></td></tr><tr><td>St. Louis Cardinals</td><td>BetOnline.ag</td><td>-112</td><td>52.8%</td><td><span class="favorite">Yes</span></td></tr><tr><td>St. Louis Cardinals</td><td>DraftKings</td><td>-118</td><td>54.1%</td><td><span class="favorite">Yes</span></td></tr><tr><td>Kansas City Royals</td><td>FanDuel</td><td>100</td><td>50.0%</td><td>No</td></tr><tr><td>Kansas City Royals</td><td>LowVig.ag</td><td>102</td><td>49.5%</td><td>No</td></tr><tr><td>Kansas City Royals</td><td>BetOnline.ag</td><td>102</td><td>49.5%</td><td>No</td></tr><tr><td>Kansas City Royals</td><td>DraftKings</td><td>-102</td><td>50.5%</td><td><span class="favorite">Yes</span></td></tr></table></div>
+                <table class="summary-table"><tr><th>Total Games</th><td>22</td></tr><tr><th>Total Props</th><td>262</td></tr><tr><th>Best Odds Available</th><td>-50000</td></tr><tr><th>Worst Odds Available</th><td>3500</td></tr><tr><th>Average Odds</th><td>-346.66</td></tr></table>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">League Leaders</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3 class="stat-title">Hitting Leaders</h3>
+                        <table class="leader-table"><tr><th>Rank</th><th>Player</th><th>Team</th><th>Value</th></tr><tr><td>1</td><td>Bobby Witt Jr.</td><td>Kansas City Royals</td><td>.332</td></tr><tr><td>3</td><td>Aaron Judge</td><td>New York Yankees</td><td>.322</td></tr><tr><td>4</td><td>Luis Arraez</td><td>San Diego Padres</td><td>.314</td></tr><tr><td>5</td><td>Shohei Ohtani</td><td>Los Angeles Dodgers</td><td>.310</td></tr></table>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-title">Pitching Leaders</h3>
+                        <table class="leader-table"><tr><th>Rank</th><th>Player</th><th>Team</th><th>Value</th></tr><tr><td>1</td><td>Chris Sale</td><td>Atlanta Braves</td><td>2.38</td></tr><tr><td>2</td><td>Tarik Skubal</td><td>Detroit Tigers</td><td>2.39</td></tr><tr><td>3</td><td>Zack Wheeler</td><td>Philadelphia Phillies</td><td>2.57</td></tr><tr><td>4</td><td>Ronel Blanco</td><td>Houston Astros</td><td>2.80</td></tr><tr><td>5</td><td>Shota Imanaga</td><td>Chicago Cubs</td><td>2.91</td></tr></table>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Value Analysis</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3 class="stat-title">Top Hitting Value Picks</h3>
+                        <table class="leader-table"><tr><th>Rank</th><th>Player</th><th>Team</th><th>Value Score</th><th>Stats</th></tr>
+            <tr>
+                <td>1</td>
+                <td>Aaron Judge</td>
+                <td>New York Yankees</td>
+                <td class="value-score">86.65</td>
+                <td>AVG: 0.322 | HOMERUNS: 58.0 | RBI: 144.0 | OBP: 0.458 | SLG: 0.701</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>Shohei Ohtani</td>
+                <td>Los Angeles Dodgers</td>
+                <td class="value-score">53.25</td>
+                <td>AVG: 0.31 | HOMERUNS: 54.0 | RBI: 130.0 | OBP: 0.39 | SLG: 0.646</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>Anthony Santander</td>
+                <td>Baltimore Orioles</td>
+                <td class="value-score">3.00</td>
+                <td>HOMERUNS: 44.0</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>José Ramírez</td>
+                <td>Cleveland Guardians</td>
+                <td class="value-score">1.47</td>
+                <td>HOMERUNS: 39.0 | RBI: 118.0 | SLG: 0.537</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>Luis Arraez</td>
+                <td>San Diego Padres</td>
+                <td class="value-score">0.01</td>
+                <td>AVG: 0.314</td>
+            </tr>
+            </table>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-title">Top Pitching Value Picks</h3>
+                        <table class="leader-table"><tr><th>Rank</th><th>Player</th><th>Team</th><th>Value Score</th><th>Stats</th></tr>
+            <tr>
+                <td>1</td>
+                <td>Tarik Skubal</td>
+                <td>Detroit Tigers</td>
+                <td class="value-score">20.98</td>
+                <td>ERA: 2.39 | STRIKEOUTS: 228.0 | WINS: 18.0 | WHIP: 0.92</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>Chris Sale</td>
+                <td>Atlanta Braves</td>
+                <td class="value-score">16.33</td>
+                <td>ERA: 2.38 | STRIKEOUTS: 225.0 | WINS: 18.0 | WHIP: 1.01</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>Ryan Helsley</td>
+                <td>St. Louis Cardinals</td>
+                <td class="value-score">14.00</td>
+                <td>SAVES: 49.0</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>Zack Wheeler</td>
+                <td>Philadelphia Phillies</td>
+                <td class="value-score">12.14</td>
+                <td>ERA: 2.57 | STRIKEOUTS: 224.0 | WINS: 16.0 | WHIP: 0.96</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>Emmanuel Clase</td>
+                <td>Cleveland Guardians</td>
+                <td class="value-score">12.00</td>
+                <td>SAVES: 47.0</td>
+            </tr>
+            </table>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timestamp">
+                Last updated: 2025-06-04 19:07:43
+            </div>
+        </div>
+    </body>
+    </html>
+    
